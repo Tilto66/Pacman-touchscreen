@@ -57,7 +57,6 @@ initial_maze = [
 ]
 
 class TouchController:
-    """Contrôleur tactile amélioré avec détection directionnelle précise"""
     def __init__(self):
         self.touch_active = False
         self.start_pos = None
@@ -373,7 +372,7 @@ def draw_maze(screen, maze):
 
 def main():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Pac-Man Tactile Amélioré")
+    pygame.display.set_caption("Pac-Man")
     clock = pygame.time.Clock()
     
     maze = [row[:] for row in initial_maze]
